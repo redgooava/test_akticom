@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input page</title>
+</head>
+<body>
+    <a href="../outputfile">Переход на таблицу с данными из базы данных</a>
+    <br>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Выберите CSV-файл: </label>
+        <input type="file" name="filecsv">
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
